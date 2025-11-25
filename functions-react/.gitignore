@@ -1,0 +1,73 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vite / dev tool cache
+.vite/
+
+# Build output
+build/
+
+# Environment files
+.env
+.env.*.local
+
+# Dependency managers / caches
+.pnp/
+.pnpm-store/
+.npm
+
+# Yarn Berry local cache
+.yarn/cache
+
+# Cache and temporary files
+.cache/
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# Lock files (uncomment if you want to ignore specific lockfiles)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Tailwind JIT cache
+.tailwindcss/
+
+# OS generated files
+__MACOSX/
+Thumbs.db
+Desktop.ini
+
+# Storybook / Misc
+.out/
+.storybook/
+
+# Public/build (if your build outputs here)
+public/build/
+
+# React Native / Expo
+.expo/
+
