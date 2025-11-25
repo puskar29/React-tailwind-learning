@@ -34,5 +34,5 @@ tailwind.config.js
 tailwind.config.cjs
 postcss.config.js
 
-# Ignore node_modules in ui-project specifically
-/ui-project/node_modules/
+# Project-specific ignores
+node_modules/
