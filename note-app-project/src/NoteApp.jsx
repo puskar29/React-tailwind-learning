@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { X } from 'lucide-react';
 
 const NoteApp = () => {
 
@@ -91,13 +90,9 @@ const NoteApp = () => {
                                     deleteNote(idx)
                                 }}><X/></button>
                         </div>
-
                     ))}
-
                 </div>
-
             </div>
-
         </div>
     )
 }
