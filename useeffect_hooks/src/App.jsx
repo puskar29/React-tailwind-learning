@@ -1,10 +1,12 @@
 import React from 'react'
 import UseEffect from './UseEffect'
+import Chaning from './Chaning'
 
 const App = () => {
   return (
     <div>
-      <UseEffect />
+      {/* <UseEffect /> */}
+      <Chaning />
     </div>
   )
 }
