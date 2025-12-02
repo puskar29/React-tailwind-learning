@@ -1,6 +1,6 @@
 import React from 'react'
 import UseEffect from './UseEffect'
-import Chaning from './Chaning'
+import Chaning from './Changing'
 
 const App = () => {
   return (
