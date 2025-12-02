@@ -1,10 +1,10 @@
 import React from 'react'
+import UseEffect from './UseEffect'
 
 const App = () => {
   return (
-    <div className='text-2xl'>
-      app
-      
+    <div>
+      <UseEffect />
     </div>
   )
 }
