@@ -38,14 +38,16 @@ const GalleryApp = () => {
             </div>
 
             <div className='flex justify-center items-center gap-6 p-4'>
-                <button className='bg-blue-600 text-white px-3 py-2 rounded font-semibold cursor-pointer active:bg-blue-600 hover:bg-blue-500 ' onClick={() =>{
+                <button 
+                style={{opacity: index == 1 ? 0.5: 1}}
+                className='bg-blue-600 text-white px-3 py-2 rounded font-semibold cursor-pointer active:bg-blue-600 hover:bg-blue-500 ' onClick={() =>{
                     if(index > 1){
                         setIndex(index-1)
                         setUserData([])
                     }
                 }}>Previous</button>
 
-
+                <h4 className='text-xs'>Page {index}</h4>
                 <button className='bg-blue-600 text-white px-3 py-2 rounded font-semibold cursor-pointer active:bg-blue-600 hover:bg-blue-500 ' onClick={() => {
                     setIndex(index+1)
                     setUserData([])
