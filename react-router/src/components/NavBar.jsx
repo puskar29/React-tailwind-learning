@@ -7,10 +7,11 @@ const NavBar = () => {
         <div className='p-5 text-2xl font-bold'>
           <a href="/">Kanung</a>
         </div>
-        <div className='flex gap-10 p-5'>
+        <div className='flex gap-6 p-5'>
           <Link to='/' >Home</Link>
           <Link to='/about'>About</Link>
           <Link to='/contact'>Contact</Link>
+          <Link to='/product'>Product</Link>
         </div>
       </div>
     </div>
