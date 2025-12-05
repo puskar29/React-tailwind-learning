@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+body{
+  background-color: rgb(201, 198, 198);
+}
+
+h1{
+  font-size: 90px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-decoration: underline;
+  font-weight: 600;
+}
