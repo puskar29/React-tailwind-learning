@@ -9,6 +9,8 @@ import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import Men from './pages/Men'
 import Women from './pages/Women'
+import Courses from './pages/Courses'
+import CoursesDetails from './pages/CoursesDetails'
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
         </Route>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/courses' element={<Courses />} />
+        <Route path='/courses/:id' element={<CoursesDetails />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
