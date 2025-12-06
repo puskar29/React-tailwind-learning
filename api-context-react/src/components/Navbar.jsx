@@ -1,11 +1,16 @@
-import React from 'react'
-import Nav2 from './Nav2'
 
-const Navbar = (props) => {
+import { useContext } from 'react'
+import Nav2 from './Nav2'
+import { ThemeDataContext } from '../context/ThemeContext'
+
+const Navbar = () => {
+
+  const [theme] = useContext(ThemeDataContext)
+
   return (
-    <div className='flex justify-between bg-black text-xl items-center text-white p-5'>
+    <div className={theme}>
         <h2 className='text-3xl font-bold'>Kanung</h2>
-        <Nav2 theme={props.theme} />
+        <Nav2 />
     </div>
   )
 }
