@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='bg-black text-white flex justify-between items-center'>
+    <div>
+       <div className='bg-black text-white flex justify-between items-center'>
         <Link to="/" className='text-3xl py-2 px-5 font-bold'>Kanung</Link>
         <div className="flex gap-4 py-5 px-5 font-semibold">
           <Link to='/'>Home</Link>
@@ -13,6 +14,8 @@ const Navbar = () => {
           <Link to='/contact'>Contact</Link>
         </div>
     </div>
+    </div>
+   
   )
 }
 
