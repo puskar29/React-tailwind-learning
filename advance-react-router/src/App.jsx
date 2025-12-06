@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { Routes, Route } from 'react-router-dom'
@@ -14,10 +14,12 @@ import CoursesDetails from './pages/CoursesDetails'
 import Navbar2 from './components/Navbar2'
 
 const App = () => {
+
+  const [theme, setTheme] = useState('Light')
   return (
     <div>
       <Navbar />
-      <Navbar2 />
+      <Navbar2 theme={theme} setTheme={setTheme} />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/product' element={<Product />}>
@@ -30,6 +32,7 @@ const App = () => {
         <Route path='/courses/:id' element={<CoursesDetails />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <h2> Theme is {theme}</h2>
       <Footer />
     </div>
   )

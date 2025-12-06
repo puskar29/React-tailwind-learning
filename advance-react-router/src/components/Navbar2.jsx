@@ -1,10 +1,14 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import Theme from './Theme'
+
 
 
 const Navbar2 = (props) => {
         let navigate = useNavigate()
+
+        function changeTheme(){
+             props.setTheme('dark')
+        }
         console.log(props);
         
   return (
@@ -26,7 +30,11 @@ const Navbar2 = (props) => {
         navigate(+1)
       }} 
       className='bg-green-800 py-1 px-5 text-white rounded m-2 active:scale-95 cursor-pointer'>Next</button>
-      
+
+      <button
+      onClick={changeTheme} 
+      className='bg-green-800 py-1 text-sm px-5 text-white rounded m-2 active:scale-95 cursor-pointer'>Change Theme</button>
+
     </div>
   )
 }
